@@ -13,5 +13,8 @@ public class Demo {
     public static void main(String[] args) {
         System.out.println("HELLO WORLD");
         System.out.println("HELLO WORLD 2!");
+        int a = 10;
+        int b = 5;
+        System.out.println("Ket qua = " + (a + b));
     }
 }
