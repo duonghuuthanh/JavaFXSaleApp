@@ -15,7 +15,8 @@ public class Demo {
         System.out.println("HELLO WORLD 2!");
         int a = 10;
         int b = 5;
-        if (a > 0)
+
+        if (a > 0 && b > 0)
             System.out.println("Ket qua = " + (a + b));
         
         System.out.println("DONE");
