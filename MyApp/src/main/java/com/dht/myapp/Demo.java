@@ -17,5 +17,7 @@ public class Demo {
         int b = 5;
         if (a > 0)
             System.out.println("Ket qua = " + (a + b));
+        
+        System.out.println("DONE");
     }
 }
