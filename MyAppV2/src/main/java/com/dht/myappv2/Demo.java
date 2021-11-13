@@ -14,6 +14,7 @@ public class Demo {
         System.out.println("Hello world 2!!!");
         System.out.println("TEST");
         int a = 10, b = 20;
-        System.out.println(a + b);
+        if (a > 0)
+            System.out.println(a + b);
     }
 }
