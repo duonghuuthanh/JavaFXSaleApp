@@ -17,5 +17,7 @@ public class Demo {
 
         if (a > 0 && b > 0)
             System.out.println(a + b + c);
+        
+        System.out.println("TEST 2");
     }
 }
