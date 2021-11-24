@@ -1,0 +1,5 @@
+com/dht/fxenglishapp/PrimaryController.class
+com/dht/fxenglishapp/App.class
+com/dht/conf/JdbcUtils.class
+module-info.class
+com/dht/fxenglishapp/SecondaryController.class

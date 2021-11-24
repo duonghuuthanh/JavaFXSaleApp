@@ -1,0 +1,4 @@
+--patch-module
+com.dht.fxenglishapp=_
+--add-reads
+com.dht.fxenglishapp=ALL-UNNAMED

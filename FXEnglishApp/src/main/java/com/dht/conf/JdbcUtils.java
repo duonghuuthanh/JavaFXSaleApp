@@ -14,8 +14,6 @@ import java.sql.SQLException;
  * @author duonghuuthanh
  */
 public class JdbcUtils {
-    private static Connection conn;
-    
     static {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
