@@ -24,6 +24,7 @@ public class JdbcUtils {
 
     /**
      * @return the conn
+     * @throws java.sql.SQLException
      */
     public static Connection getConn() throws SQLException {
         return DriverManager.getConnection("jdbc:mysql://localhost/englishdb", 
