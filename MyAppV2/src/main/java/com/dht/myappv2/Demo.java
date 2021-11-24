@@ -11,11 +11,13 @@ package com.dht.myappv2;
  */
 public class Demo {
     public static void main(String[] args) {
-        System.out.println("Hello world 2!!!");
-        System.out.println("TEST");
-        int a = 10, b = 20;
-
-        if (a > 0 && b > 0)
-            System.out.println(a + b);
+        int[] a = {5, 6, 7, 3, 4, 2};
+        
+        int sum = 0;
+        for (int x: a)
+            if (Utils.ktNt(x))
+                sum += x;
+        
+        System.out.println(sum);
     }
 }

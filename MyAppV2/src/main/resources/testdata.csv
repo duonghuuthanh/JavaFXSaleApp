@@ -1,0 +1,7 @@
+n,expeceted,message
+3,true,loi 1
+7,true,loi 2
+6,false,loi 3
+113,true,loi 4
+143,false,loi 5
+144,false,loi 6
