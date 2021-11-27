@@ -1,0 +1,34 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+* {
+    -fx-font-family: Tahoma;
+}
+
+VBox {
+    -fx-background-color: lightblue;
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-alignment:  CENTER;
+}
+
+HBox {
+    -fx-alignment: CENTER;
+    -fx-spacing: 10;
+}
+
+HBox TextField {
+    -fx-pref-width: 400;
+}
+
+TextField, ComboBox {
+    -fx-pref-height: 36;
+}
+
+Text.Subject {
+    -fx-font-size: 40;
+    -fx-fill: red;
+    -fx-stroke-width: 3;
+    -fx-stroke: gold;
+}
