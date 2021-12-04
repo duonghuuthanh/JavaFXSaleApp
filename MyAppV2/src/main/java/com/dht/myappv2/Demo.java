@@ -11,13 +11,22 @@ package com.dht.myappv2;
  */
 public class Demo {
     public static void main(String[] args) {
-        int[] a = {5, 6, 7, 3, 4, 2};
-        
-        int sum = 0;
-        for (int x: a)
-            if (Utils.ktNt(x))
-                sum += x;
-        
-        System.out.println(sum);
+        System.out.println(Test.TUAN.soNgay());
     }
+}
+
+enum Test {
+    TUAN {
+        @Override
+        public int soNgay() {
+            return 7;
+        }
+    }, NGAY {
+        @Override
+        public int soNgay() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+    };
+    
+    public abstract int soNgay();
 }

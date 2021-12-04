@@ -13,6 +13,10 @@ VBox {
     -fx-alignment: CENTER;
 }
 
+VBox.Practice {
+    -fx-alignment:CENTER_LEFT;
+}
+
 HBox {
     -fx-spacing: 10;
     -fx-alignment: CENTER;

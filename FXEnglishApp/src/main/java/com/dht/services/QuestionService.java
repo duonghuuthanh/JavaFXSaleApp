@@ -109,4 +109,26 @@ public class QuestionService {
         
         return choices;
     }
+    
+    public List<Question> loadQuestions(int num) throws SQLException {
+        List<Question> questions = new ArrayList<>();
+        
+        try (Connection conn = JdbcUtils.getConn()) {
+            String sql = "SELECT * FROM question ORDER BY RAND() LIMIT ?";
+            
+            
+            PreparedStatement stm = conn.prepareStatement(sql);
+            stm.setInt(1, num);
+            
+            ResultSet rs = stm.executeQuery();
+            while (rs.next()) {
+                Question q = new Question(rs.getString("id"), rs.getString("content"), 
+                        rs.getInt("category_id"));
+                questions.add(q);
+            }
+            
+        }
+        
+        return questions;
+    }
 }

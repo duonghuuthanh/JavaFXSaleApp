@@ -121,4 +121,25 @@ public class QuestionServices {
             return choices;
         }
     }
+    
+    public List<Question> getPracticeQuestion(int num) throws SQLException {
+        try (Connection conn = JdbcUtils.getConn()) {
+            String sql = "SELECT * FROM question ORDER BY rand() LIMIT ?";
+            
+            PreparedStatement stm = conn.prepareStatement(sql);
+            stm.setInt(1, num);
+            
+            ResultSet rs = stm.executeQuery();
+            
+            List questions = new ArrayList<>();
+            
+            while (rs.next()) {
+                Question q = new Question(rs.getString("id"), 
+                        rs.getString("content"), rs.getInt("category_id"));
+                questions.add(q);
+            }
+            
+            return questions;
+        }
+    }
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="461.0" stylesheets="@../../../styles/Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dht.fxenglishappv2.FXMLMainController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Subject" text="MULTIPLE CHOICE APP" />
+      <Button contentDisplay="TOP" mnemonicParsing="false" styleClass="Main" text="Question Management">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../styles/default.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#practiceHandler" prefHeight="159.0" prefWidth="290.0" styleClass="Main" text="Practice">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../styles/default.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</VBox>

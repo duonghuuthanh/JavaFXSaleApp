@@ -5,6 +5,8 @@
  */
 package com.dht.pojo;
 
+import java.util.List;
+
 /**
  *
  * @author duonghuuthanh
@@ -13,6 +15,7 @@ public class Question {
     private String id;
     private String content;
     private int categoryId;
+    private List<Choice> choices;
 
     public Question() {
     }
@@ -63,5 +66,19 @@ public class Question {
      */
     public void setCategoryId(int categoryId) {
         this.categoryId = categoryId;
+    }
+
+    /**
+     * @return the choices
+     */
+    public List<Choice> getChoices() {
+        return choices;
+    }
+
+    /**
+     * @param choices the choices to set
+     */
+    public void setChoices(List<Choice> choices) {
+        this.choices = choices;
     }
 }
